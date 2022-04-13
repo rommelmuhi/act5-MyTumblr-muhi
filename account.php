@@ -8,7 +8,7 @@ if (isset($_SESSION['ses_username'])===false){
 } elseif (isset($_REQUEST['logout'])===true){
     session_destroy();
     header("Location: index.php?logout");
-}
+} 
 
 ?>
 

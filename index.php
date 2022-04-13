@@ -80,6 +80,9 @@
 		      			} elseif (isset($_REQUEST['logfirst'])===true){
 		      				echo "<div class='alert alert-info' role='alert'> Please Login First.. </div>";
 
+		      			} elseif (isset($_SESSION['ses_username'])===true){
+		      				echo "<div class='alert alert-info' role='alert'> You are still Logged in. <a href='account.php'> Click here </a> to procceed. </div>";
+
 		      			}
 
 		      			?>
