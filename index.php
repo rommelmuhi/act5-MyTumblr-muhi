@@ -66,6 +66,7 @@
 		      		<div class="form-group">
 
 		      			<?php 
+
 		      			if(isset($_REQUEST['notexist'])===true){
 										echo " <div class='alert alert-danger' role='alert'> Username does not exist.. </div> ";
 		      			} elseif (isset($_REQUEST['wrongpass'])===true){
@@ -73,6 +74,9 @@
 		      			} elseif (isset($_REQUEST['success']) === true){
 		      				echo "<div class='alert alert-success' role='alert'> Redirecting.. </div>";
 		      				header ("Refresh: 5; url=account.php");
+		      			}elseif (isset($_REQUEST['logout'])===true){
+		      				echo "<div class='alert alert-info' role='alert'> Thank you.. </div>";
+
 		      			}
 
 		      			?>
