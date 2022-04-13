@@ -74,8 +74,11 @@
 		      			} elseif (isset($_REQUEST['success']) === true){
 		      				echo "<div class='alert alert-success' role='alert'> Redirecting.. </div>";
 		      				header ("Refresh: 5; url=account.php");
-		      			}elseif (isset($_REQUEST['logout'])===true){
+		      			} elseif (isset($_REQUEST['logout'])===true){
 		      				echo "<div class='alert alert-info' role='alert'> Thank you.. </div>";
+
+		      			} elseif (isset($_REQUEST['logfirst'])===true){
+		      				echo "<div class='alert alert-info' role='alert'> Please Login First.. </div>";
 
 		      			}
 
